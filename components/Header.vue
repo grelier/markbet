@@ -12,10 +12,10 @@
     <transition name="slidedown">
         <div v-if="!isVisible" class="fixed top-0 left-0 right-0 flex justify-center">
             <div class="container flex items-center mx-1 mt-2">
-                <Link to="/" variant="dark" size="md" class="mx-1">
+                <Link @click="scrollUp('/')" to="/" variant="dark" size="md" class="mx-1">
                     Home
                 </Link>
-                <Link to="/about" variant="dark" size="md" class="mx-1">
+                <Link @click="scrollUp('/about')" to="/about" variant="dark" size="md" class="mx-1">
                     About
                 </Link>
             </div>
@@ -24,6 +24,8 @@
 </template>
 
 <script setup lang="ts">
+import { useRoute } from 'vue-router';
+
 onMounted(() => {
     window.addEventListener("scroll", onScroll)
 })
@@ -35,6 +37,10 @@ let isVisible = ref(true)
 
 const onScroll = () => {
     isVisible.value = window.scrollY < 100
+}
+
+const scrollUp = (path: string) => {
+    document.getElementById('__nuxt').scrollIntoView({ behavior: 'smooth' });
 }
 </script>
 
