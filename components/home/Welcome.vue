@@ -18,23 +18,15 @@ onMounted(() => {
 watch(angle, (newValue, oldValue) => {
     const interval = 10
     const step = 0.1
-    const min = -45
-    const max = 45
-    if(oldValue < newValue && newValue < max) {
+    const min = 0
+    const max = 360
+    if((oldValue < newValue || newValue === 0) && newValue < max) {
         setTimeout(() => {
             angle.value += step
         }, interval)
     } else if(newValue >= max) {
         setTimeout(() => {
-            angle.value -= step
-        }, interval)
-    } else if(oldValue > newValue && newValue > min) {
-        setTimeout(() => {
-            angle.value -= step
-        }, interval)
-    } else if(newValue <= min) {
-        setTimeout(() => {
-            angle.value += step
+            angle.value = min
         }, interval)
     }
 })
