@@ -17,5 +17,8 @@ useHead({
   meta: [
     { name: 'description', content: 'Browse and buy bets from the best bettors in town' }
   ],
+  link: [
+    { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+  ],
 })
 </script>
