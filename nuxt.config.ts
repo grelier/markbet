@@ -17,7 +17,8 @@ export default defineNuxtConfig({
         configPath: 'tailwind.config.ts',
     },
     css: [
-        '~/assets/main.scss'
+        '~/assets/main.scss',
+        '~/node_modules/flag-icons/css/flag-icons.min.css',
     ],
     vite: {
         css: {

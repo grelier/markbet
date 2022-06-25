@@ -1,21 +1,25 @@
 <template>
     <div id="main" class="w-full bg-dark flex justify-center shadow-lg">
         <div class="container flex items-center mx-1">
-            <Link to="/" variant="light" size="md" class="mx-1">
+            <Link to="/" variant="light" size="lg" class="mx-1">
                 Home
             </Link>
-            <Link to="/about" variant="light" size="md" class="mx-1">
+            <Link to="/about" variant="light" size="lg" class="mx-1">
                 About
             </Link>
+            <div class="grow flex justify-end">
+                <Language />
+            </div>
+            
         </div>  
     </div>
     <transition name="slidedown">
         <div v-if="!isVisible" class="fixed top-0 left-0 right-0 flex justify-center">
             <div class="container flex items-center mx-1 mt-2">
-                <Link @click="scrollUp('/')" to="/" variant="dark" size="md" class="mx-1">
+                <Link @click="scrollUp('/')" to="/" variant="dark" size="lg" class="mx-1">
                     Home
                 </Link>
-                <Link @click="scrollUp('/about')" to="/about" variant="dark" size="md" class="mx-1">
+                <Link @click="scrollUp('/about')" to="/about" variant="dark" size="lg" class="mx-1">
                     About
                 </Link>
             </div>
@@ -24,8 +28,6 @@
 </template>
 
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
-
 onMounted(() => {
     window.addEventListener("scroll", onScroll)
 })
@@ -46,7 +48,7 @@ const scrollUp = (path: string) => {
 
 <style scoped>
 #main {
-    height: 50px
+    height: 70px
 }
 
 .slidedown-enter-active {
