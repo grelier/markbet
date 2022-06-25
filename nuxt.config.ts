@@ -6,5 +6,9 @@ export default defineNuxtConfig({
     tailwindcss: {
         cssPath: '~/assets/css/tailwind.css',
         configPath: 'tailwind.config.ts',
-    }
+    },
+    css: [
+        '~/assets/main.css',
+        '~/assets/main.scss'
+    ]
 })

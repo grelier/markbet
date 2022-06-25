@@ -1,3 +1,7 @@
 <template>
-    <div>about</div>
+    <div>
+        <AboutHeadline/>
+        <AboutUser/>
+        <AboutBeter/>
+    </div>
 </template>
