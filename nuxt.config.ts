@@ -8,7 +8,16 @@ export default defineNuxtConfig({
         configPath: 'tailwind.config.ts',
     },
     css: [
-        '~/assets/main.css',
+        // '~/assets/main.css',
         '~/assets/main.scss'
-    ]
+    ],
+    vite: {
+        css: {
+            preprocessorOptions: {
+                sass: {
+                    additionalData: '@import "@/assets/_colors.scss"',
+                },
+            },
+        },
+    },
 })

@@ -2,6 +2,6 @@
     <div>
         <AboutHeadline/>
         <AboutUser/>
-        <AboutBeter/>
+        <AboutBettor/>
     </div>
 </template>

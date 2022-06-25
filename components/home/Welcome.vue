@@ -1,25 +1,60 @@
 <template>
     <div id="main" class="flex justify-center shadow-lg">
-        <div class="container flex flex-column items-center justify-center mx-1">
+        <div class="container flex flex-col items-center justify-center mx-1">
+            <img src="/logo-dark.svg" width="300" class="mb-3"/>
             <p class="text-light text-center text-title font-bold break-words">
-                Browse and buy bets from the<br>most performant beter in town
+                Browse and buy bets<br>from the best bettors in town
             </p>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
+const angle = ref(0)
+onMounted(() => {
+    angle.value += 1
+})
+
+watch(angle, (newValue, oldValue) => {
+    const interval = 10
+    const step = 0.1
+    const min = -45
+    const max = 45
+    if(oldValue < newValue && newValue < max) {
+        setTimeout(() => {
+            angle.value += step
+        }, interval)
+    } else if(newValue >= max) {
+        setTimeout(() => {
+            angle.value -= step
+        }, interval)
+    } else if(oldValue > newValue && newValue > min) {
+        setTimeout(() => {
+            angle.value -= step
+        }, interval)
+    } else if(newValue <= min) {
+        setTimeout(() => {
+            angle.value += step
+        }, interval)
+    }
+})
+
+const cssAngle = computed(() => {
+    return `${angle.value}deg`
+})
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@use '@/assets/colors.scss';
+
 #main {
     height: 100vh;
     background: linear-gradient(
-        -45deg, 
-        #bb19fc, 
-        #0ec3f9, 
-        #6512ac, 
-        #ec05fb
+        v-bind(cssAngle), 
+        colors.$primary,
+        colors.$secondary,
+        colors.$tertiary,
+        colors.$quaternary,
     );
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;

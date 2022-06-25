@@ -9,13 +9,13 @@
             </p>
             <ul class="list-disc mt-2">
                 <li class="text-light text-lg font-bold break-words">
-                    Bets made by professional available for purchase
+                    Latest bets from the best professionals
                 </li>
                 <li class="text-light text-lg font-bold break-words">
-                    No more bullshit! Independent statistics and analysis on past bets
+                    No more bullshit! We do independent statistics and analysis
                 </li>
                 <li class="text-light text-lg font-bold break-words">
-                    Simple and secure
+                    A mobile app simple to use
                 </li>
             </ul>
             

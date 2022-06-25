@@ -9,13 +9,16 @@
             </p>
             <ul class="list-disc mt-2">
                 <li class="text-light text-lg font-bold break-words">
-                    No more data leak! Our app are fully secure using the latest web technologies
+                    Screenshot proof, no more leaks!
                 </li>
                 <li class="text-light text-lg font-bold break-words">
                     Expand your community by providing them the best in class user experience
                 </li>
                 <li class="text-light text-lg font-bold break-words">
-                    Simple and secure
+                    An amazing dashboard. Accessible from your laptop and your phone
+                </li>
+                <li class="text-light text-lg font-bold break-words">
+                     Fully secure using the latest web technologies
                 </li>
             </ul>
         </div>

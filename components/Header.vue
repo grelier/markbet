@@ -1,9 +1,6 @@
 <template>
     <div id="main" class="w-full bg-dark flex justify-center shadow-lg">
         <div class="container flex items-center mx-1">
-            <Link to="/" variant="light" size="xl">
-                <img src="/logo-dark.svg" width="100" />
-            </Link>
             <Link to="/" variant="light" size="md" class="mx-1">
                 Home
             </Link>
@@ -43,7 +40,7 @@ const onScroll = () => {
 
 <style scoped>
 #main {
-    height: 100px
+    height: 50px
 }
 
 .slidedown-enter-active {

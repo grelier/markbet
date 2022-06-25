@@ -1,13 +1,8 @@
-$color-dark: #0b0c59;
-$color-grey: #808080;
-$color-light: #fafaff;
-$color-primary: #bb19fc;
-$color-secondary: #0ec3f9;
-$color-tertiary: #6512ac;
-$color-quaternary: #ec05fb;
+
+@import 'colors';
 
 html, body, #app{
-    background-color: $color-light;
+    background-color: $light;
 }
 
 .page-enter-active,
