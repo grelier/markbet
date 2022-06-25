@@ -41,7 +41,7 @@ const onScroll = () => {
     isVisible.value = window.scrollY < 100
 }
 
-const scrollUp = (path: string) => {
+const scrollUp = () => {
     document.getElementById('__nuxt').scrollIntoView({ behavior: 'smooth' });
 }
 </script>

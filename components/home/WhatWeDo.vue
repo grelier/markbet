@@ -4,7 +4,13 @@
             <p class="text-dark text-center text-title font-bold break-words">
                 We aim to shake up<br>the way you bet!
             </p>
-            <Link to="/about" size="xl" variant="primary" class="mt-2">
+            <Link
+                @click="scrollUp()"
+                to="/about"
+                size="xl"
+                variant="primary"
+                class="mt-2"
+            >
                 Learn more here
             </Link>
         </div>
@@ -12,6 +18,9 @@
 </template>
 
 <script setup lang="ts">
+const scrollUp = () => {
+    document.getElementById('__nuxt').scrollIntoView({ behavior: 'smooth' });
+}
 </script>
 
 <style scoped>
