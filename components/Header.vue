@@ -2,10 +2,10 @@
     <div id="main" class="w-full bg-dark flex justify-center shadow-lg">
         <div class="container flex items-center mx-1">
             <Link to="/" variant="light" size="lg" class="mx-1">
-                Home
+                {{ $t('components.header.home') }}
             </Link>
             <Link to="/about" variant="light" size="lg" class="mx-1">
-                About
+                {{ $t('components.header.about') }}
             </Link>
             <div class="grow flex justify-end">
                 <Language />
@@ -16,11 +16,11 @@
     <transition name="slidedown">
         <div v-if="!isVisible" class="fixed top-0 left-0 right-0 flex justify-center">
             <div class="container flex items-center mx-1 mt-2">
-                <Link @click="scrollUp('/')" to="/" variant="dark" size="lg" class="mx-1">
-                    Home
+                <Link @click="scrollTop()" to="/" variant="dark" size="lg" class="mx-1">
+                    {{ $t('components.header.home') }}
                 </Link>
-                <Link @click="scrollUp('/about')" to="/about" variant="dark" size="lg" class="mx-1">
-                    About
+                <Link @click="scrollTop()" to="/about" variant="dark" size="lg" class="mx-1">
+                    {{ $t('components.header.about') }}
                 </Link>
             </div>
         </div>  
@@ -41,7 +41,7 @@ const onScroll = () => {
     isVisible.value = window.scrollY < 100
 }
 
-const scrollUp = () => {
+const scrollTop = () => {
     document.getElementById('__nuxt').scrollIntoView({ behavior: 'smooth' });
 }
 </script>

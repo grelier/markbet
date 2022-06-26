@@ -2,23 +2,23 @@
     <div id="main" class="flex bg-tertiary justify-center shadow-lg">
         <div class="container flex flex-wrap flex-col items-center justify-center mx-1">
             <p class="text-light text-center text-title font-bold break-words">
-                Are you an experience beter?
+                {{ $t('components.about.bettor.experienceBettor') }}
             </p>
             <p class="text-primary text-center text-title font-bold break-words">
-                Help the community by selling your expertize
+                {{ $t('components.about.bettor.helpCommunity') }}
             </p>
             <ul class="list-disc mt-2">
                 <li class="text-light text-lg font-bold break-words">
-                    Screenshot proof, no more leaks!
+                    {{ $t('components.about.bettor.list.1') }}
                 </li>
                 <li class="text-light text-lg font-bold break-words">
-                    Expand your community by providing them the best in class user experience
+                    {{ $t('components.about.bettor.list.2') }}
                 </li>
                 <li class="text-light text-lg font-bold break-words">
-                    An amazing dashboard. Accessible from your laptop and your phone
+                    {{ $t('components.about.bettor.list.3') }}
                 </li>
                 <li class="text-light text-lg font-bold break-words">
-                     Fully secure using the latest web technologies
+                    {{ $t('components.about.bettor.list.4') }}
                 </li>
             </ul>
         </div>

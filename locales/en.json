@@ -1,3 +1,50 @@
 {
-    "welcome": "Welcome"
+    "components": {
+        "header": {
+            "home": "Home",
+            "about": "About"
+        },
+        "footer": {},
+        "home": {
+            "comingSoon": {
+                "comingSoon": "Keep posted<br>We are coming soon!"
+            },
+            "welcome": {
+                "intro": "Browse and buy bets<br>from the best bettors in town"
+            },
+            "whatWeDo": {
+                "whatWeDo": "We aim to shake up<br>the way you bet!",
+                "learnMore": "Learn more here"
+            }
+        },
+        "about": {
+            "bettor": {
+                "experienceBettor": "Are you an experience beter?",
+                "helpCommunity": "Help the community by selling your expertize",
+                "list": {
+                    "1": "Screenshot proof, no more leaks!",
+                    "2": "Expand your community by providing them the best in class user experience",
+                    "3": "An amazing dashboard. Accessible from your laptop and your phone",
+                    "4": "Fully secure using the latest web technologies"
+                }
+            },
+            "headline": {
+                "ready": "Ready to bet?",
+                "weAreWaiting": "We are waiting for you."
+            },
+            "user": {
+                "wantToBet": "Want to get into beting?",
+                "hereToHelp": "We are here to help!",
+                "list": {
+                    "1": "Latest bets from the best professionals",
+                    "2": "No more bullshit! We do independent statistics and analysis",
+                    "3": "A mobile app simple to use"
+                }
+            }
+        }
+    },
+    "pages": {
+        "home": {},
+        "about": {}
+    }
 }

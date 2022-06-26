@@ -6,7 +6,14 @@
   </div>
 </template>
 
+
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+onMounted(() => {
+  useI18n().locale.value = localStorage.getItem('locale') || navigator.languages.find(el => Object.keys(['en', 'fr', 'es', 'de']).includes(el)) || 'en'
+})
+
 useHead({
   title: 'Live your bet',
   viewport: 'width=device-width, initial-scale=1',

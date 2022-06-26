@@ -2,9 +2,10 @@
     <div id="main" class="flex justify-center shadow-lg">
         <div class="container flex flex-col items-center justify-center mx-1">
             <img src="/logo-dark.svg" height="300" width="300" alt="logo" class="mb-3"/>
-            <p class="text-light text-center text-title font-bold break-words">
-                Browse and buy bets<br>from the best bettors in town
-            </p>
+            <p
+                v-html="$t('components.home.welcome.intro')"
+                class="text-light text-center text-title font-bold break-words"
+            />
         </div>
     </div>
 </template>

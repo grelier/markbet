@@ -2,20 +2,20 @@
     <div id="main" class="flex bg-primary justify-center shadow-lg">
         <div class="container flex flex-wrap flex-col items-center justify-center mx-1">
             <p class="text-light text-center text-title font-bold break-words">
-                Want to get into beting?
+                {{ $t('components.about.user.wantToBet') }}
             </p>
             <p class="text-tertiary text-center text-title font-bold break-words">
-                We are here to help!
+                {{ $t('components.about.user.hereToHelp') }}
             </p>
             <ul class="list-disc mt-2">
                 <li class="text-light text-lg font-bold break-words">
-                    Latest bets from the best professionals
+                    {{ $t('components.about.user.list.1') }}
                 </li>
                 <li class="text-light text-lg font-bold break-words">
-                    No more bullshit! We do independent statistics and analysis
+                    {{ $t('components.about.user.list.2') }}
                 </li>
                 <li class="text-light text-lg font-bold break-words">
-                    A mobile app simple to use
+                    {{ $t('components.about.user.list.3') }}
                 </li>
             </ul>
             
