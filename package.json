@@ -5,7 +5,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "translations": "vue-i18n-extract report --add --remove --noEmptyTranslation 'en' --vueFiles './*(components|pages)/**/*.?(js|ts|vue)' --languageFiles './locales/*(fr|es|de).json'"
+    "translations": "vue-i18n-extract report --vueFiles './*(components|pages)/**/*.?(js|ts|vue)' --languageFiles './locales/*(fr|es|de).json'"
   },
   "devDependencies": {
     "@intlify/nuxt3": "^0.2.2",
