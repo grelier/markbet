@@ -3,6 +3,10 @@
 Simple matketing static website build with nuxt 3
 https://v3.nuxtjs.org/
 
+Can find the production version running here:
+
+https://liveyourbet.com
+
 ## dependencies
 
 Require nodejs 16
