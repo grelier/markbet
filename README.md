@@ -1,28 +1,27 @@
-# Nuxt 3 Minimal Starter
+# Markbet
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Simple matketing static website build with nuxt 3
+https://v3.nuxtjs.org/
+
+## dependencies
+
+Require nodejs 16
+https://nodejs.org/en/
 
 ## Setup
 
-Make sure to install the dependencies:
+To install the dependencies:
 
 ```bash
-# yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
 ## Development Server
 
-Start the development server on http://localhost:3000
+Start the development server:
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Production
@@ -30,14 +29,25 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+yarn generate
 ```
 
-Locally preview production build:
+Locally preview production build locally:
 
 ```bash
-npm run preview
+yarn preview
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
-# markbet
+## Check translations
+
+to check whether the translations are up to date (no missing or unused keys):
+
+```bash
+yarn translations
+```
+
+## Deployement on firebase with github actions
+
+Require additional setup on github if you clone this repo
+
+An action will build and deploy the project to firebase hosting using github action when pushing a commit to `main`
