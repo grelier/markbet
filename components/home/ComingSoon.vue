@@ -1,7 +1,7 @@
 <template>
     <div id="main" class="flex bg-primary justify-center shadow-lg">
         <div
-            class="container flex flex-column items-center justify-center mx-1"
+            class="container flex flex-col items-center justify-center m-2"
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="1000"
@@ -19,6 +19,6 @@
 
 <style scoped>
 #main {
-    height: 100vh;
+    min-height: 100vh;
 }
 </style>

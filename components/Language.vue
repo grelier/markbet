@@ -52,7 +52,7 @@ const isOpen = ref(false)
 .slidedown-enter-to,
 .slidedown-leave-from {
   overflow: hidden;
-  max-height: 100vh;
+  max-min-height: 100vh;
 }
 
 .slidedown-enter-from,

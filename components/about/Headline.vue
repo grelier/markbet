@@ -1,7 +1,7 @@
 <template>
     <div id="main" class="flex bg-light justify-center shadow-lg">
         <div
-            class="container flex flex-wrap flex-col items-center justify-center mx-1"
+            class="container flex flex-col items-center justify-center m-2"
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="1000"
@@ -9,7 +9,7 @@
             <p class="text-dark text-center text-title font-bold break-words">
                 {{ $t('components.about.headline.ready') }}
             </p>
-            <p class="text-primary text-center text-title font-bold break-words">
+            <p class="text-primary text-center text-xl font-bold break-words">
                 {{ $t('components.about.headline.weAreWaiting') }}
             </p>
         </div>
@@ -21,6 +21,6 @@
 
 <style scoped>
 #main {
-    height: 100vh;
+    min-height: 100vh;
 }
 </style>

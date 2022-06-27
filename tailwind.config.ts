@@ -15,20 +15,20 @@ module.exports = {
       green: "#198754"
     },
     spacing: {
-      '0': '0px',
-      '1': '8px',
-      '2': '16px',
-      '3': '32px',
-      '4': '64px',
-      '5': '128px',
+      '0': '0rem',
+      '1': '0.5rem',
+      '2': '1rem',
+      '3': '2rem',
+      '4': '4rem',
+      '5': '8rem',
     },
     fontSize: {
-      xs: "12px",
-      sm: "14px",
-      md: "16px",
-      lg: "20px",
-      xl: "28px",
-      title: "44px",
+      xs: "0.75",
+      sm: "0.9rem",
+      md: "1rem",
+      lg: "1.25rem",
+      xl: "1.75rem",
+      title: "2.5rem",
     },
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
@@ -42,9 +42,9 @@ module.exports = {
       normal: "0px"
     },
     lineHeight: {
-      tight: '16px',
-      normal: '24px',
-      spaced: '32px',
+      tight: '1rem',
+      normal: '2rem',
+      spaced: '4rem',
     },
     screens: {
       sm: '640px',
@@ -67,7 +67,7 @@ module.exports = {
       full: '1',
     },
     borderRadius: {
-      none: 'opx',
+      none: '0px',
       sm: '4px',
       md: '8px',
       lg: '16px',
