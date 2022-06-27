@@ -30,6 +30,7 @@ export default defineNuxtConfig({
     css: [
         '~/assets/main.scss',
         '~/node_modules/flag-icons/css/flag-icons.min.css',
+        '~/node_modules/aos/dist/aos.css',
     ],
     vite: {
         css: {

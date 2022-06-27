@@ -1,6 +1,11 @@
 <template>
     <div id="main" class="flex justify-center shadow-lg">
-        <div class="container flex flex-col items-center justify-center mx-1">
+        <div
+            class="container flex flex-col items-center justify-center mx-1"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+        >
             <img src="/logo-dark.svg" height="300" width="300" alt="logo" class="mb-3"/>
             <p
                 v-html="$t('components.home.welcome.intro')"

@@ -1,6 +1,11 @@
 <template>
     <div id="main" class="flex bg-tertiary justify-center shadow-lg">
-        <div class="container flex flex-wrap flex-col items-center justify-center mx-1">
+        <div
+            class="container flex flex-wrap flex-col items-center justify-center mx-1"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+        >
             <p class="text-light text-center text-title font-bold break-words">
                 {{ $t('components.about.bettor.experienceBettor') }}
             </p>

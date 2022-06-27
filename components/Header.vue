@@ -14,7 +14,7 @@
         </div>  
     </div>
     <transition name="slidedown">
-        <div v-if="!isVisible" class="fixed top-0 left-0 right-0 flex justify-center">
+        <div v-if="!isVisible" class="fixed top-0 left-0 right-0 flex justify-center z-50">
             <div class="container flex items-center mx-1 mt-2">
                 <Link @click="scrollTop()" to="/" variant="dark" size="lg" class="mx-1">
                     {{ $t('components.header.home') }}

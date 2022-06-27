@@ -1,7 +1,12 @@
 <template>
     <div id="main" class="flex bg-light justify-center shadow-lg">
-        <div class="container flex flex-wrap flex-col items-center justify-center mx-1">
-            <p v-html="$t('components.home.whatWeDo.whatWeDo')" class="text-dark text-center text-title font-bold break-words" />
+        <div
+            class="container flex flex-wrap flex-col items-center justify-center mx-1"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+        >
+            <p v-html="$t('components.home.whatWeDo.whatWeDo')" class="text-dark text-center text-title font-bold break-words"/>
             <Link
                 @click="scrollTop()"
                 to="/about"
